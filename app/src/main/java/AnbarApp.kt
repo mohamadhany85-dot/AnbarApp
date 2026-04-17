@@ -4,6 +4,7 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.anbar.app.ui.HomeScreen
 
 @Composable
 fun AnbarApp() {
@@ -14,17 +15,8 @@ fun AnbarApp() {
         navController = navController,
         startDestination = "home"
     ) {
-
         composable("home") {
-            // هنبني Home Screen بعدين
-        }
-
-        composable("needs") {
-            // الاحتياجات
-        }
-
-        composable("debts") {
-            // الديون
+            HomeScreen()
         }
     }
 }
